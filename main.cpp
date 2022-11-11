@@ -11,7 +11,7 @@ int main()
  
 
 cout << "Enter a number between 1 and 1000: " << endl;
-  cin >> numb;
+  cin >> number;
 
 if (number % 2)
   
