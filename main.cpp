@@ -7,6 +7,10 @@ int main()
 	int integer;
 	cout << "Enter integer from 1 to 1000 \n";
 	cin >> integer;
+	
+// equations to see if number is prime
+	if (integer % 2 != )
+	{cout << "This number is prime";
 
 
  if (integer % 2 == 0)
