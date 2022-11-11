@@ -8,9 +8,11 @@ int main()
 	cout << "Enter integer from 1 to 1000 \n";
 	cin >> integer;
 	
-// equations to see if number is prime
+// equations to see if number is prime not sure what equation to use
 	if (integer % 2 != )
 	{cout << "This number is prime";
+	 
+//equations for output of numbers divisible by if not prime 
 
 
  if (integer % 2 == 0)
