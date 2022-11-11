@@ -1,17 +1,29 @@
 // write your code here
 #include <iostream>
-#include <cmath>
-
-using namespace std;
 
 int main()
-
 {
-  int number;
- 
+	const int primes[] {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31};
 
-cout << "Enter a number between 1 and 1000: " << endl;
-  cin >> number;
+	int chose {};
 
-if (number % 2)
-  
+	while (chose < 1 || chose > 1000) {
+		std::cout << "Enter a positive integer between 1 and 1000: ";
+		std::cin >> chose;
+	}
+
+	bool isp {true};
+
+	for (const int p : primes)
+		if (p != chose)
+			if ((chose % p) == 0) {
+				if (isp)
+					std::cout << chose << " is not prime\n";
+
+				std::cout << "It is divisible by " << p << '\n';
+				isp = false;
+			}
+
+	if (isp)
+		std::cout << chose << " is prime\n";
+}
